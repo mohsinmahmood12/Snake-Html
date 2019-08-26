@@ -18,4 +18,5 @@ Snake is a fun game to make as it doesn't require a lot of code (less than 100 l
 
 ## Other Basic Games
 
-* [Breakout](https://gist.github.com/straker/98a2aed6a7686d26c04810f08bfaf66b)
+- [Pong](https://gist.github.com/straker/81b59eecf70da93af396f963596dfdc5)
+- [Breakout](https://gist.github.com/straker/98a2aed6a7686d26c04810f08bfaf66b)
