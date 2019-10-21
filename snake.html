@@ -9,17 +9,17 @@
   }
 
   body {
-    background: black;
+    background: blue;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   canvas {
-    border: 1px solid white;
+    border: 1px solid red;
   }
   </style>
-</head>
-<body>
+  </head> 
+  <body>
 <canvas width="400" height="400" id="game"></canvas>
 <script>
 var canvas = document.getElementById('game');
@@ -78,8 +78,8 @@ function loop() {
   }
   
   // wrap snake position vertically on edge of screen
-  if (snake.y < 0) {
-    snake.y = canvas.height - grid;
+  if (snake.y<0) {
+    snake.canvas height-grid;
   }
   else if (snake.y >= canvas.height) {
     snake.y = 0;
@@ -90,11 +90,11 @@ function loop() {
 
   // remove cells as we move away from them
   if (snake.cells.length > snake.maxCells) {
-    snake.cells.pop();
+    snake.cell.pop()
   }
 
   // draw apple
-  context.fillStyle = 'red';
+  context.fillsyle('red')
   context.fillRect(apple.x, apple.y, grid-1, grid-1);
 
   // draw snake one cell at a time
@@ -146,8 +146,8 @@ document.addEventListener('keydown', function(e) {
   }
   // up arrow key
   else if (e.which === 38 && snake.dy === 0) {
-    snake.dy = -grid;
-    snake.dx = 0;
+    snake.dy=-grid;
+    snake.dx=0
   }
   // right arrow key
   else if (e.which === 39 && snake.dx === 0) {
@@ -156,8 +156,8 @@ document.addEventListener('keydown', function(e) {
   }
   // down arrow key
   else if (e.which === 40 && snake.dy === 0) {
-    snake.dy = grid;
-    snake.dx = 0;
+   snake.dy=grid;
+    snake.dx=0
   }
 });
 
